@@ -1,0 +1,110 @@
+<ul class="breadcrumb" style="margin-bottom:10px;">
+  <li><a href="#URL#Cliente/show">Cliente</a></li>
+  <li><span class="divider">/</span></li>
+  <li>#TITULO#</li>
+  <li><span class="divider">/</span></li>
+  <li class="active">#NOME#</li>
+</ul>
+<h3 class="page-header">Informações</h3>
+<div class="span12">
+  <h6 class="not-margin">Nº: #ID# | Data de Matricula: #DATAMATRI#</h6>
+</div>
+<div class="row">
+  <div class="span12"><i class="icon-user"></i> Cliente</div>
+  <div class="span4">
+    <dl class="dl-horizontal">
+      <dt>Nome:</dt>
+      <dd>#NOME#</dd>
+      <dt>Telefone:</dt>
+      <dd>#FONE#</dd>
+    </dl>
+  </div>
+  <div class="span4">
+    <dl class="dl-horizontal">
+      <dt>Data de Nascimento:</dt>
+      <dd>#NASC#</dd>
+            <dt>Idade:</dt>
+      <dd>#IDADE# anos</dd>
+      <dt>E-mail:</dt>
+      <dd>#EMAIL#</dd>
+    </dl>
+  </div>
+  <div class="span4">
+    <dl class="dl-horizontal">
+      <dt>Sexo:</dt>
+      <dd>#SEXO#</dd>
+      <dt>CPF:</dt>
+      <dd>#CPF#</dd>
+    </dl>
+  </div>
+  <div class="span12"><i class="icon-home"></i> Endereço - <strong>CEP:</strong> #CEP# </div>
+  <div class="span4">
+    <dl class="dl-horizontal">
+      <dt>Rua:</dt>
+      <dd>#RUA#</dd>
+    </dl>
+  </div>
+  <div class="span4">
+    <dl class="dl-horizontal">
+      <dt>Bairro:</dt>
+      <dd>#BAIRRO#</dd>
+      <dt>Complemento:</dt>
+      <dd>#COMPLEMENTO#</dd>
+    </dl>
+  </div>
+  <div class="span4">
+    <dl class="dl-horizontal">
+      <dt>Numero:</dt>
+      <dd>#NUMERO#</dd>
+      <dt>Cidade:</dt>
+      <dd>#CIDADE#</dd>
+    </dl>
+  </div>
+</div>
+<a class="btn btn-small" href="#URL#Imprimir/ata/#ID#">Gerar Ata Avaliação</a> <a class="btn btn-small" href="#URL#Cliente/editar/#ID#">Editar</a> <a class="btn btn-danger btn-small" href="#URL#Cliente/excluir/#ID#" onclick="return confirm(\'Confirma Exclusao do Registro?\')">Excluir</a>
+<h3 class="page-header">Medidas</h3>
+#INCLUIR_MEDIDA#
+<table class="table table-hover" style="font-size:14px">
+  <thead>
+    <tr>
+      <th>Altura</th>
+      <th>Peso</th>
+      <th><abbr title="Braço Direito" class="tip" data-toggle="tooltip" data-placement="top">Brç. Dir.</abbr></th>
+      <th><abbr class="tip" data-toggle="tooltip" data-placement="top" title="Braço Esquerdo">Brç. Esq.</abbr></th>
+      <th>Peitoral</th>
+      <th>Barriga</th>
+      <th>Quadril</th>
+      <th><abbr class="tip" data-toggle="tooltip" data-placement="top" title="Coxa Direita">Cx. Dir.</abbr></th>
+      <th><abbr class="tip" data-toggle="tooltip" data-placement="top" title="Coxa Esquerda">Cx. Esq.</abbr></th>
+      <th><abbr class="tip" data-toggle="tooltip" data-placement="top" title="Panturrilha Direita">Pant. Dir.</abbr></th>
+      <th><abbr class="tip" data-toggle="tooltip" data-placement="top" title="Panturrilha Esquerda">Pant. Esq.</abbr></th>
+      <th>Data de Avaliação</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+  #MEDIDAS#
+    </tbody>
+  
+</table>
+<h3 class="page-header">Mensalidade</h3>
+#INCLUIR#
+<table class="table table-hover" >
+  <thead>
+    <tr>
+      <th>Mês</th>
+      <th>Status</th>
+      <th>Valor</th>
+      <th>Data de Pagamento</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+  #MENSALIDADE#
+    </tbody>
+  
+</table>
+<div class="page-header"></div>
+<div>
+  <a class="btn" href="#URL#Cliente/show">Voltar</a>
+</div>

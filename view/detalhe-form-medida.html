@@ -1,0 +1,106 @@
+<ul class="breadcrumb" style="margin-bottom:10px;">
+  <li><a href="#URL#Cliente/show">Cliente</a></li>
+  <li><span class="divider">/</span></li>
+  <li><a href="#URL#Detalhe/show/#ID#">Detalhes #CLIENTE#</a></li>
+  <li><span class="divider">/</span></li>
+  <li class="active">#TITULO#</li>
+</ul>
+<form id="formularioMedida" class="form-inline" action="#ACTION#" method="post">
+  <h4>Cliente: #CLIENTE#- <span class="label">*Apenas Numeros</span> </h4> 
+  <div class="span12 margin-input">
+    <div class="span1">
+      <div class="control-group">
+        <label class="control-label" for="altura">Altura</label>
+        <div class="controls">
+          <input class="input-mini" name="altura" type="text" value="#ALTURA#">
+        </div>
+      </div>
+    </div>
+    <div class="span1">
+      <div class="control-group">
+        <label class="control-label" for="peso">Peso</label>
+        <div class="controls">
+          <input name="peso" type="text" class="input-mini" id="peso" value="#PESO#">
+        </div>
+      </div>
+    </div>
+    <div class="span1">
+      <div class="control-group">
+        <label class="control-label" for="brc_dir"><abbr class="tip" data-toggle="tooltip" data-placement="top" title="Braço Direito">Brç. Dir.</abbr></label>
+        <div class="controls">
+          <input name="brc_dir" type="text" class="input-mini" id="brc_dir" value="#BRC_DIR#">
+        </div>
+      </div>
+    </div>
+    <div class="span1">
+      <div class="control-group">
+        <label class="control-label" for="brc_esq"><abbr class="tip" data-toggle="tooltip" data-placement="top" title="Braço Esquerdo">Brç. Esq.</abbr></label>
+        <div class="controls">
+          <input name="brc_esq" type="text" class="input-mini" id="brc_esq" value="#BRC_ESQ#">
+        </div>
+      </div>
+    </div>
+    <div class="span1">
+      <div class="control-group">
+        <label class="control-label" for="peitoral">Peitoral</label>
+        <div class="controls">
+          <input name="peitoral" type="text" class="input-mini" id="peitoral" value="#PEITORAL#">
+        </div>
+      </div>
+    </div>
+    <div class="span1">
+      <div class="control-group">
+        <label class="control-label" for="barriga">Barriga</label>
+        <div class="controls">
+          <input name="barriga" type="text" class="input-mini" id="barriga" value="#BARRIGA#">
+        </div>
+      </div>
+    </div>
+    <div class="span1">
+      <div class="control-group">
+        <label class="control-label" for="quadril">Quadril</label>
+        <div class="controls">
+          <input name="quadril" type="text" class="input-mini" id="quadril" value="#QUADRIL#">
+        </div>
+      </div>
+    </div>
+    <div class="span1">
+      <div class="control-group">
+        <label class="control-label" for="cx_dir"><abbr class="tip" data-toggle="tooltip" data-placement="top" title="Coxa Direito">Cx. Dir.</abbr></label>
+        <div class="controls">
+          <input name="cx_dir" type="text" class="input-mini" id="cx_dir" value="#CX_DIR#">
+        </div>
+      </div>
+    </div>
+    <div class="span1">
+      <div class="control-group">
+        <label class="control-label" for="cx_esq"><abbr class="tip" data-toggle="tooltip" data-placement="top" title="Coxa Esquerda">Cx. Esq.</abbr></label>
+        <div class="controls">
+          <input name="cx_esq" type="text" class="input-mini" id="cx_esq" value="#CX_ESQ#">
+        </div>
+      </div>
+    </div>
+    <div class="span1">
+      <div class="control-group">
+        <label class="control-label" for="pnt_dir"><abbr class="tip" data-toggle="tooltip" data-placement="top" title="Panturrilha Direita">Pant. Dir.</abbr></label>
+        <div class="controls">
+          <input name="pnt_dir" type="text" class="input-mini" id="pnt_dir" value="#PNT_DIR#">
+        </div>
+      </div>
+    </div>
+    <div class="span1">
+      <div class="control-group">
+        <label class="control-label" for="pnt_esq"><abbr class="tip" data-toggle="tooltip" data-placement="top" title="Panturrilha Esquerda">Pant Esq.</abbr></label>
+        <div class="controls">
+          <input name="pnt_esq" type="text" class="input-mini" id="pnt_esq" value="#PNT_ESQ#">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls ">
+      <button type="submit" class="btn btn-green">Concluir</button>
+      <button type="button" class="btn btn-red" onclick="history.go(-1)">Cancelar</button>
+      #IDFK# </div>
+  </div>
+</form>

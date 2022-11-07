@@ -1,0 +1,47 @@
+<ul class="breadcrumb" style="margin-bottom:10px;">
+  <li class="active"><a href="#URL#Professor/show">Professor</a></li>
+  <li><span class="divider">/</span></li>
+  <li class="active">#TITULO#</li>
+</ul>
+<form id="formularioProfessor" class="form-horizontal" action="#ACTION#" method="post">
+  <div class="control-group">
+    <label class="control-label" for="nome">Nome:</label>
+    <div class="controls">
+      <input type="text" id="nome" name="nome" value="#NOME#" />
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label cpf" for="cpf">CPF: </label>
+    <div class="controls">
+      <input type="text" id="cpf" name="cpf" value="#CPF#" >
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="nasc">Data de Nascimento: </label>
+    <div class="controls">
+      <input type="text" id="nasc" name="nasc" value="#NASC#" />
+    </div>
+  </div>
+ <div class="control-group">
+    <label class="control-label" for="sexo">Sexo:</label>
+    <div class="controls">
+      <select name="sexo" id="sexo">
+        <option value="#SEXO#">#SEXO#</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+      </select>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="fone">Telefone: </label>
+    <div class="controls">
+      <input type="text" id="fone" name="fone" value="#FONE#" />
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <button type="submit" class="btn btn-small" onClick="return verifica()">Concluir</button>
+      <button type="button" class="btn btn-small" onclick="history.go(-1)">Cancelar</button>
+    </div>
+  </div>
+</form>

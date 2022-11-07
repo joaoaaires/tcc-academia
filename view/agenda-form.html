@@ -1,0 +1,63 @@
+<ul class="breadcrumb" style="margin-bottom:10px;">
+  <li class="active"><a href="#URL#Cliente/show">Cliente</a></li>
+  <li><span class="divider">/</span></li>
+  <li class="active">#TITULO#</li>
+</ul>
+<form id="formularioAgenda" class="form-horizontal" action="#ACTION#" method="post">
+  <h3 class="subheader">Agenda</h3>
+  <div class="control-group">
+    <label class="control-label" for="data">Data:</label>
+    <div class="controls">
+      <input type="date" id="data" name="data" value="#DATA#">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="hora">Hora:</label>
+    <div class="controls">
+      <input type="time" id="hora" name="hora" value="#HORA#">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="descricao">Descrição:</label>
+    <div class="controls">
+      <input type="text" id="descricao" name="descricao" value="#DISCRICAO#">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="cliente">Cliente:</label>
+    <div class="controls">
+      <select name="cliente" id="cliente">
+        
+        
+      #CLIENTEFK#
+      
+        <option>--------</option>
+        
+        #CLIENTE#
+      
+      
+      </select>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="professor">Professor:</label>
+    <div class="controls">
+      <select name="professor" id="professor">
+        
+      #PROFESSORFK#
+      
+        <option>--------</option>
+        
+        #PROFESSOR#
+      
+      
+      </select>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <button type="submit" class="btn btn-green">Concluir</button>
+      <button type="button" class="btn btn-red" onclick="history.go(-1)">Cancelar</button>
+    </div>
+  </div>
+</form>

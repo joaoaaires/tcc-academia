@@ -1,0 +1,57 @@
+label.valid {
+width: 24px;
+height: 24px;
+background: url(assets/img/valid.png) center center no-repeat;
+display: inline-block;
+text-indent: -9999px;
+}
+label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.not-margin {
+	margin:0;
+	padding:0;	
+}
+.margin-input {
+	margin-bottom:15px;	
+}
+#calendar {
+	width: 120px;
+	height:120px;
+	border-radius: 10px;
+	border: 1px solid;
+	box-shadow: 1px 1px 1px 1px #CCC;
+	-webkit-box-shadow: 1px 1px 1px 1px #CCC;
+	float:left;
+	margin-right:5px;
+}
+.numero {
+	font-size: 80px;
+	margin-top:35px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	border-bottom-right-radius: 9px;
+	border-bottom-left-radius: 9px;
+	background:#FFF;
+}
+.mes {
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #BE3730;
+	color: #FFF;
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
+}
+#lembrete {
+	width:300px;	
+}
+.pessoas {
+	font-size:16px;
+	padding-top:10px;
+}
+.input-search {
+	float:right;
+}

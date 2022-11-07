@@ -1,0 +1,43 @@
+<ul id="breadcrumb" class="breadcrumb" style="margin-bottom:10px;">
+  <li><a href="#URL#Cliente/show">Cliente</a></li>
+  <li><span class="divider">/</span></li>
+  <li>#TITULO#</li>
+  <li><span class="divider">/</span></li>
+  <li>#NOME#</li>
+  <li><span class="divider">/</span></li>
+  <li class="active">Recibo</li>
+</ul>
+<div id="printablediv" align="center">
+  <table width="90%" border="0" cellpadding="2" cellspacing="0" style="border:1px solid">
+    <tr>
+      <th colspan="3" align="left"><h2>RECIBO #ID#</h2></th>
+    </tr>
+    <tr>
+      <td colspan="3" align="right"><h3>VALOR R$ #VALOR#,00</h3></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p>Recebi(emos) de #NOME# - CPF/CNPJ n° #CPF#, a importância de cento e
+          cinqüenta reais - referente a(o) Mensalidade da Academia do mês de #MES#</p></td>
+    </tr>
+    <tr>
+      <td colspan="3">E, para maior clareza firmo o presente recibo para que produza os seus efeitos, dando plena, rasa e<br>
+        irrevogável quitação, pelo valor recebido.</td>
+    </tr>
+    <tr>
+      <td colspan="3" align="right">Avenida Modelo - Laranjeiras do Sul - PR - 85.301-100, 05 de Novembro de 2013</td>
+    </tr>
+    <tr>
+      <td width="37%">&nbsp;</td>
+      <td width="63%" colspan="2" align="center"><p>&nbsp;</p>
+        <p>__________________________________________</p>
+        <p>Sistema de Academia</p></td>
+    </tr>
+    <tr>
+      <td colspan="3" align="center">Sistema de Academia - CPF/CNPJ: 42.733.546/0001-00 - Inscrição Estadual: 999999999<br>
+        Email: contato@academia.com - Website: http://www.sistemadeacademia.com.br - Fone: (42)<br>
+        3635-5151</td>
+    </tr>
+  </table>
+</div>
+<button type="button" onClick="javascript:printDiv('printablediv')" class="btn btn-green">Imprimir</button>
+<button type="button" class="btn btn-red" onclick="history.go(-1)">Cancelar</button>

@@ -1,0 +1,62 @@
+<ul class="breadcrumb" style="margin-bottom:10px;">
+  <li><a href="#URL#Cliente/show">Cliente</a></li>
+  <li><span class="divider">/</span></li>
+  <li><a href="#URL#Detalhe/show/#ID#">Detalhes #CLIENTE#</a></li>
+  <li><span class="divider">/</span></li>
+  <li class="active">#TITULO#</li>
+</ul>
+<form id="formularioMensalidade" class="form-inline" action="#ACTION#" method="post">
+  <h4>Cliente: #CLIENTE#</h4>
+  <div class="span12 margin-input">
+    <div class="span3">
+      <div class="control-group">
+        <label class="control-label" for="mes">Mês:</label>
+        <div class="controls">
+          <select class="input-large" name="mes" id="mes">
+            <option value="#MES#">#MES#</option>
+            <option value="Janeiro">Janeiro</option>
+            <option value="Fevereiro">Fevereiro</option>
+            <option value="Março">Março</option>
+            <option value="Abril">Abril</option>
+            <option value="Maio">Maio</option>
+            <option value="Junho">Junho</option>
+            <option value="Julho">Julho</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Setembro">Setembro</option>
+            <option value="Outubro">Outubro</option>
+            <option value="Novembro">Novembro</option>
+            <option value="Dezembro">Dezembro</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="span3">
+      <div class="control-group">
+        <label class="control-label" for="status">Status:</label>
+        <div class="controls">
+          <select name="status" id="status" class="input-large">
+            <option value="#STATUS#">#STATUS#</option>
+            <option value="Pago">Pago</option>
+            <option value="Não Pago">Não Pago</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="span3">
+      <div class="control-group">
+        <label class="control-label" for="valor">Valor:</label><br>
+        <div class="controls input-append input-prepend">
+        <span class="add-on">$</span>
+          <input name="valor" type="text" class="span2" id="valor" value="#VALOR#">
+          <span class="add-on">.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls ">
+      <button type="submit" class="btn btn-green">Concluir</button>
+      <button type="button" class="btn btn-red" onclick="history.go(-1)">Cancelar</button>
+      #IDFK# </div>
+  </div>
+</form>

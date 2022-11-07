@@ -1,0 +1,106 @@
+<ul id="breadcrumb" class="breadcrumb" style="margin-bottom:10px;">
+  <li><a href="#URL#Cliente/show">Cliente</a></li>
+  <li><span class="divider">/</span></li>
+  <li>#TITULO#</li>
+  <li><span class="divider">/</span></li>
+  <li>#NOME#</li>
+  <li><span class="divider">/</span></li>
+  <li class="active">Ata de Acompanhamento</li>
+</ul>
+<div id="printablediv">
+  <h3 class="page-header">Informações - Imprimir</h3>
+  <table class="table">
+    <tr>
+      <td colspan="6"><h6 class="not-margin">Nº: #ID# | Data de Matricula: #DATAMATRI#</h6></td>
+    </tr>
+    <tr>
+      <td colspan="2"><i class="icon-user"></i> Cliente</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right">Nome:</td>
+      <td>#NOME#</td>
+      <td align="right">Data de Nascimento:</td>
+      <td>#NASC#</td>
+      <td align="right">Sexo:</td>
+      <td>#SEXO#</td>
+    </tr>
+    <tr>
+      <td align="right">Telefone:</td>
+      <td>#FONE#</td>
+      <td align="right">E-mail:</td>
+      <td>#EMAIL#</td>
+      <td align="right">CPF:</td>
+      <td>#CPF#</td>
+    </tr>
+    <tr>
+      <td colspan="2"><i class="icon-home"></i> Endereço - <strong>CEP:</strong> #CEP#</td>
+      <td align="right">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td align="right">&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td align="right">Rua:</td>
+      <td>#RUA#</td>
+      <td align="right">Bairro:</td>
+      <td>#BAIRRO#</td>
+      <td align="right">Numero:</td>
+      <td>#NUMERO#</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td align="right">Complemento:</td>
+      <td>#COMPLEMENTO#</td>
+      <td align="right">Cidade:</td>
+      <td>#CIDADE#</td>
+    </tr>
+  </table>
+  <h3 class="page-header">Medidas</h3>
+  <table class="table table-hover" style="font-size:14px">
+    <thead>
+      <tr>
+        <th>Altura</th>
+        <th>Peso</th>
+        <th><abbr title="Braço Direito" class="tip" data-toggle="tooltip" data-placement="top">Brç. Dir.</abbr></th>
+        <th><abbr class="tip" data-toggle="tooltip" data-placement="top" title="Braço Esquerdo">Brç. Esq.</abbr></th>
+        <th>Peitoral</th>
+        <th>Barriga</th>
+        <th>Quadril</th>
+        <th><abbr class="tip" data-toggle="tooltip" data-placement="top" title="Coxa Direita">Cx. Dir.</abbr></th>
+        <th><abbr class="tip" data-toggle="tooltip" data-placement="top" title="Coxa Esquerda">Cx. Esq.</abbr></th>
+        <th><abbr class="tip" data-toggle="tooltip" data-placement="top" title="Panturrilha Direita">Pant. Dir.</abbr></th>
+        <th><abbr class="tip" data-toggle="tooltip" data-placement="top" title="Panturrilha Esquerda">Pant. Esq.</abbr></th>
+        <th>Data de Avaliação</th>
+      </tr>
+    </thead>
+    <tbody>
+    
+    #MEDIDAS#
+      </tbody>
+    
+  </table>
+  <h3 class="page-header">Mensalidade</h3>
+  <table class="table table-hover" >
+    <thead>
+      <tr>
+        <th>Mês</th>
+        <th>Status</th>
+        <th>Valor</th>
+        <th>Data de Pagamento</th>
+      </tr>
+    </thead>
+    <tbody>
+    
+    #MENSALIDADE#
+      </tbody>
+    
+  </table>
+</div>
+<div class="page-header"></div>
+<button type="button" onClick="javascript:printDiv('printablediv')" class="btn btn-green">Imprimir</button>
+<button type="button" class="btn btn-red" onclick="history.go(-1)">Cancelar</button>
